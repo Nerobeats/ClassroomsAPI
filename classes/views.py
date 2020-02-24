@@ -1,9 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-
 from .models import Classroom
 from .forms import ClassroomForm
-
 def classroom_list(request):
 	classrooms = Classroom.objects.all()
 	context = {
